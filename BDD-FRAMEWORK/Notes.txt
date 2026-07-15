@@ -56,7 +56,29 @@ Create Parameterized Jenkin job to dynamically send the global properties at run
 
 
 
-1. )Exceptions 
+1.Exceptions 
     ->io.cucumber.testng.UndefinedStepException
     ->io.cucumber.core.runner.DuplicateStepDefinitionException:
     ->io.cucumber.core.gherkin.FeatureParserException:
+    ->java.lang.ClassNotFoundException: html
+
+2.Tags
+    ->@smoke = before any scenario
+    ->@@regression = after any scenario
+
+3. Background
+
+4 Hooks 
+    ->Before ->Background -> Scenario ->After
+    -> partial code can move into hooks
+    ->common code can be pushed into Background
+
+5. Reporting
+    ->plugin = {"pretty", "html:target/cucumber.html" }
+    ->plugin = {"pretty", "html:target/cucumber.html" , "json:target/cucumber.json"}
+
+6. dryRun = true,
+
+Sample Project ->https://github.com/selenium-cucumber/selenium-cucumber-java-maven-example
+
+https://github.com/mubbashir/appium-java-cucumber-gradle
