@@ -61,6 +61,7 @@ Create Parameterized Jenkin job to dynamically send the global properties at run
     ->io.cucumber.core.runner.DuplicateStepDefinitionException:
     ->io.cucumber.core.gherkin.FeatureParserException:
     ->java.lang.ClassNotFoundException: html
+    -.Unhandled exception: java.lang.InterruptedException
 
 2.Tags
     ->@smoke = before any scenario
