@@ -61,7 +61,8 @@ Create Parameterized Jenkin job to dynamically send the global properties at run
     ->io.cucumber.core.runner.DuplicateStepDefinitionException:
     ->io.cucumber.core.gherkin.FeatureParserException:
     ->java.lang.ClassNotFoundException: html
-    -.Unhandled exception: java.lang.InterruptedException
+    ->Unhandled exception: java.lang.InterruptedException
+    ->java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)"
 
 2.Tags
     ->@smoke = before any scenario
@@ -83,3 +84,7 @@ Create Parameterized Jenkin job to dynamically send the global properties at run
 Sample Project ->https://github.com/selenium-cucumber/selenium-cucumber-java-maven-example
 
 https://github.com/mubbashir/appium-java-cucumber-gradle
+
+
+7. Dependency injection
+    ->
