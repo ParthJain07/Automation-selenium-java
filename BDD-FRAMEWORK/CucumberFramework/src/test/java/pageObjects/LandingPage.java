@@ -12,6 +12,8 @@ public class LandingPage {
     By search = By.xpath("//input[@type='search']");
     By productName = By.cssSelector("h4.product-name");
     By topDeals =By.linkText("Top Deals");
+    By addToCart = By.xpath("//*[contains(text(), 'ADD TO CART')]");
+    By increment = By.cssSelector("a.increment");
 
     public void SearchItem(String shortName){
         driver.findElement(search).sendKeys(shortName);
@@ -26,6 +28,22 @@ public class LandingPage {
     }
 
     public void selectTopDealsPage(){
-        driver.findElement(By.linkText("Top Deals")).click();
+        driver.findElement(topDeals).click();
+    }
+
+    public String getTitleLandingPage(){
+        return  driver.getTitle();
+    }
+
+    public void incrementQuantity(int Quantity){
+        int i = Quantity;
+        while(i >0){
+            driver.findElement(increment).click();
+            i--;
+        }
+    }
+
+    public void addToCartAction(){
+
     }
 }

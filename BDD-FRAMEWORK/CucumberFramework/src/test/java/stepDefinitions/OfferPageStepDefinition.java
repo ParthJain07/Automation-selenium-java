@@ -25,7 +25,7 @@ PageObjectManager pageObjectManager;
     }
 
 
-    @Then("user searched for same shortname {string} in offers page")
+    @Then("^user searched for same shortname (.+) in offers page$")
     public void user_searched_for_same_shortname_in_offers_page_to_check_if_product_exist(String shortname) throws InterruptedException {
         //offer page ->enty grab text
 
